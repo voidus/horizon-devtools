@@ -1,8 +1,8 @@
-# Horizon Haskell Platform
+# Horizon Haskell Devtools
 
 [horizon-haskell.net](https://horizon-haskell.net).
 
-Horizon is a haskell package set targetting new builds of GHC.
+Horizon Devtools is a package set targetting development time utilities such as the HLS.
 
 ## Package Set Policy
 
@@ -12,20 +12,9 @@ This package set has the following policy.
 * Nonversioned locations (git, unversioned tarballs) are permitted to allow
   GHC to advance.
 * The following packages must always build:
-  * aeson
-  * beam-postgres
-  * composite-base
-  * dhall
+  * fourmolu
   * haskell-language-server
-  * hedgehog
-  * pandoc
-  * persistent-postgresql
-  * polysemy
-  * servant
-  * sydtest
-  * tasty
-  * wai-app-static
-  * warp
+  * hlint
 
 ## Updating the Package Set
 
