@@ -7,8 +7,8 @@
 }:
 mkDerivation {
   pname = "lsp-test";
-  version = "0.16.0.1";
-  sha256 = "607f12a547135848cf6d433a0ef47647ade94d06e812ea1c3a3fb7d3bde9046e";
+  version = "0.16.0.0";
+  sha256 = "0ea6672ce6287329c6c731a95aef730a3ed8f3ecd0fbf357ad9ea08f6dda5d28";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

@@ -360,7 +360,7 @@
   }
 , { mapKey = "lsp-test"
   , mapValue =
-      "1d92fc33cb9f84b28f4496e23ebb04fcfbb6e569cfe2624c1a6b41995e30f8dd"
+      "1584be7f5afc54c6dd93cd1481293ec21a9f9f37baac3574869aacb7c7d3b411"
   }
 , { mapKey = "lsp-types"
   , mapValue =
