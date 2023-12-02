@@ -33,11 +33,7 @@
       imports = [
         inputs.horizon-hoogle.flakeModule
       ];
-      perSystem = { config, system, ... }:
-        let
-          pkgs = nixpkgs.legacyPackages.${system};
-
-        in
+      perSystem = { pkgs, system, ... }:
         with pkgs.lib;
         let
           haskellLib = pkgs.haskell.lib;
