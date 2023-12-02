@@ -9,7 +9,7 @@
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
-    horizon-core.url = "git+https://gitlab.horizon-haskell.net/package-sets/horizon-core?ref=lts/ghc-9.4.x";
+    horizon-core.url = "git+https://gitlab.horizon-haskell.net/package-sets/horizon-core?ref=lts/ghc-9.6.x";
     horizon-hoogle.url = "git+https://gitlab.horizon-haskell.net/nix/horizon-hoogle";
     lint-utils.url = "git+https://gitlab.nixica.dev/nix/lint-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
@@ -33,11 +33,7 @@
       imports = [
         inputs.horizon-hoogle.flakeModule
       ];
-      perSystem = { config, system, ... }:
-        let
-          pkgs = nixpkgs.legacyPackages.${system};
-
-        in
+      perSystem = { pkgs, system, ... }:
         with pkgs.lib;
         let
           haskellLib = pkgs.haskell.lib;

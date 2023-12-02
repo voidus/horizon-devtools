@@ -73,16 +73,16 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1699788548,
-        "narHash": "sha256-9XTNSqYxT3HzVIglLW4UprhVMjyDsZzQY8s0qZDS+nw=",
-        "ref": "lts/ghc-9.4.x",
-        "rev": "3d5cb59b2e770f825f3927f26c279f69a6e2c490",
-        "revCount": 1184,
+        "lastModified": 1699713412,
+        "narHash": "sha256-7lhsgR7AkaEboecmhX50aq5e3MIe8Knh2NhMnQuta/8=",
+        "ref": "lts/ghc-9.6.x",
+        "rev": "ab95cdb440adfe19e8016bfbffc9c3e4c818b220",
+        "revCount": 1178,
         "type": "git",
         "url": "https://gitlab.horizon-haskell.net/package-sets/horizon-core"
       },
       "original": {
-        "ref": "lts/ghc-9.4.x",
+        "ref": "lts/ghc-9.6.x",
         "type": "git",
         "url": "https://gitlab.horizon-haskell.net/package-sets/horizon-core"
       }
