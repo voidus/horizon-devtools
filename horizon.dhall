@@ -37,7 +37,7 @@ let packages =
       , generic-lens = H.callHackage "generic-lens" "2.2.2.0"
       , generic-lens-core = H.callHackage "generic-lens-core" "2.2.1.0"
       , ghc-check = H.callHackage "ghc-check" "0.5.0.8"
-      , ghc-exactprint = H.callHackage "ghc-exactprint" "1.6.1.3"
+      , ghc-exactprint = H.callHackage "ghc-exactprint" "1.7.0.1"
       , ghc-lib-parser = H.callHackage "ghc-lib-parser" "9.6.3.20231014"
       , ghc-lib-parser-ex = H.callHackage "ghc-lib-parser-ex" "9.6.0.2"
       , ghc-trace-events = H.callHackage "ghc-trace-events" "0.1.2.7"
@@ -159,5 +159,5 @@ let packages =
 in  H.HorizonExport.MakeOverlay
       { overlayFile = "overlay.nix"
       , packagesDir = "pkgs/"
-      , overlay = { compiler = "ghc-9.4.5", packages = toMap packages }
+      , overlay = { compiler = "ghc-9.6.3", packages = toMap packages }
       }

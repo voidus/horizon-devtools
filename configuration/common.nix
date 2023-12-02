@@ -4,6 +4,8 @@ with haskellLib;
 
 final: prev: {
 
+  foliage = null;
+
   ghcide-bench = null;
 
   ghcide-test-utils = null;

@@ -1,12 +1,12 @@
 { mkDerivation, Cabal-syntax, Diff, HUnit, base, bytestring
-, containers, data-default, directory, fail, filemanip, filepath
-, free, ghc, ghc-boot, ghc-paths, lib, mtl, ordered-containers
-, silently, syb
+, containers, data-default, directory, extra, fail, filepath, free
+, ghc, ghc-boot, ghc-paths, lib, mtl, ordered-containers, silently
+, syb
 }:
 mkDerivation {
   pname = "ghc-exactprint";
-  version = "1.6.1.3";
-  sha256 = "feba1ec1d3df0822ecfb74cfa6221f3c0966419919fa508b031492dc523a4be3";
+  version = "1.7.0.1";
+  sha256 = "5f4a90983af7e9050d3ffcad5cfc601af33ff7e850a3ffcbeaa5cf16737ec351";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;
@@ -16,7 +16,7 @@ mkDerivation {
   ];
   testHaskellDepends = [
     base bytestring Cabal-syntax containers data-default Diff directory
-    fail filemanip filepath ghc ghc-boot ghc-paths HUnit mtl
+    extra fail filepath ghc ghc-boot ghc-paths HUnit mtl
     ordered-containers silently syb
   ];
   enableLibraryProfiling = true;
