@@ -748,11 +748,11 @@
         "horizon-shell": "horizon-shell"
       },
       "locked": {
-        "lastModified": 1703773383,
-        "narHash": "sha256-KoNktcuQPJmmxiaJu5EXcT4/q8AzeukXWS5tXRsIwiM=",
+        "lastModified": 1703853524,
+        "narHash": "sha256-6GPy8xLOyxJJIyU4sjXIEwd6L9nrtV6Ad5qGTtRf1mU=",
         "ref": "refs/heads/master",
-        "rev": "974ad08688c3c2d6b9a9486b9c60678d46cc6af9",
-        "revCount": 18,
+        "rev": "c0e8d4467e8a7fef2bb02118dea11b83fd5f7103",
+        "revCount": 22,
         "type": "git",
         "url": "https://gitlab.horizon-haskell.net/nix/horizon-develop-flake"
       },
