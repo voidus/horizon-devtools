@@ -748,11 +748,11 @@
         "horizon-shell": "horizon-shell"
       },
       "locked": {
-        "lastModified": 1703935183,
-        "narHash": "sha256-SMwTjh4BK+O0xjSwi+B7Q7EdgoiiWTKZWgmHpDxcojk=",
+        "lastModified": 1704445700,
+        "narHash": "sha256-pd137SOVbb2V2vqubt9WEJSbCuN+0f04YhpgW4Qq2QA=",
         "ref": "refs/heads/master",
-        "rev": "66a1b1493fa8d7e42b1091cb52cbab0cd9be471d",
-        "revCount": 24,
+        "rev": "b7bc60ac08cce21bcd50e1ab2a0c480ec6b2c80c",
+        "revCount": 26,
         "type": "git",
         "url": "https://gitlab.horizon-haskell.net/nix/horizon-develop-flake"
       },
@@ -1598,11 +1598,11 @@
     },
     "nixpkgs_23": {
       "locked": {
-        "lastModified": 1703961334,
-        "narHash": "sha256-M1mV/Cq+pgjk0rt6VxoyyD+O8cOUiai8t9Q6Yyq4noY=",
+        "lastModified": 1704194953,
+        "narHash": "sha256-RtDKd8Mynhe5CFnVT8s0/0yqtWFMM9LmCzXv/YKxnq4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b0d36bd0a420ecee3bc916c91886caca87c894e9",
+        "rev": "bd645e8668ec6612439a9ee7e71f7eac4099d4f6",
         "type": "github"
       },
       "original": {
