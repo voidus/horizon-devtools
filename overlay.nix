@@ -47,6 +47,8 @@ final: prev: with pkgs.haskell.lib; {
 
   doctest-discover = final.callPackage (./pkgs/doctest-discover.nix) { };
 
+  enclosed-exceptions = final.callPackage (./pkgs/enclosed-exceptions.nix) { };
+
   enummapset = final.callPackage (./pkgs/enummapset.nix) { };
 
   filemanip = final.callPackage (./pkgs/filemanip.nix) { };
@@ -74,6 +76,10 @@ final: prev: with pkgs.haskell.lib; {
   ghc-lib-parser = final.callPackage (./pkgs/ghc-lib-parser.nix) { };
 
   ghc-lib-parser-ex = final.callPackage (./pkgs/ghc-lib-parser-ex.nix) { };
+
+  ghc-parser = final.callPackage (./pkgs/ghc-parser.nix) { };
+
+  ghc-syntax-highlighter = final.callPackage (./pkgs/ghc-syntax-highlighter.nix) { };
 
   ghc-trace-events = final.callPackage (./pkgs/ghc-trace-events.nix) { };
 
@@ -155,6 +161,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hspec-attoparsec = final.callPackage (./pkgs/hspec-attoparsec.nix) { };
 
+  hspec-contrib = final.callPackage (./pkgs/hspec-contrib.nix) { };
+
   hw-fingertree = final.callPackage (./pkgs/hw-fingertree.nix) { };
 
   hw-hspec-hedgehog = final.callPackage (./pkgs/hw-hspec-hedgehog.nix) { };
@@ -169,11 +177,15 @@ final: prev: with pkgs.haskell.lib; {
 
   hxt-unicode = final.callPackage (./pkgs/hxt-unicode.nix) { };
 
+  ihaskell = final.callPackage (./pkgs/ihaskell.nix) { };
+
   implicit-hie = final.callPackage (./pkgs/implicit-hie.nix) { };
 
   implicit-hie-cradle = final.callPackage (./pkgs/implicit-hie-cradle.nix) { };
 
   indexed-profunctors = final.callPackage (./pkgs/indexed-profunctors.nix) { };
+
+  ipython-kernel = final.callPackage (./pkgs/ipython-kernel.nix) { };
 
   keys = final.callPackage (./pkgs/keys.nix) { };
 
@@ -239,6 +251,8 @@ final: prev: with pkgs.haskell.lib; {
 
   rvar = final.callPackage (./pkgs/rvar.nix) { };
 
+  shelly = final.callPackage (./pkgs/shelly.nix) { };
+
   sorted-list = final.callPackage (./pkgs/sorted-list.nix) { };
 
   sqlite-simple = final.callPackage (./pkgs/sqlite-simple.nix) { };
@@ -258,5 +272,7 @@ final: prev: with pkgs.haskell.lib; {
   vector-instances = final.callPackage (./pkgs/vector-instances.nix) { };
 
   xmlgen = final.callPackage (./pkgs/xmlgen.nix) { };
+
+  zeromq4-haskell = final.callPackage (./pkgs/zeromq4-haskell.nix) { };
 
 }
