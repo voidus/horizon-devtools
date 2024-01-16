@@ -90,6 +90,10 @@
   , mapValue =
       "27aca1c0850335d335d7d340f334107691eac3a0cd42549d99d2d785fc71f5c9"
   }
+, { mapKey = "enclosed-exceptions"
+  , mapValue =
+      "770dbcfbac1e193355a1ce2eb7a7aaeefd56a7ac7c39fb2b93780f49835d7980"
+  }
 , { mapKey = "enummapset"
   , mapValue =
       "796b0f3e6f6d038890f8db0c9aa707b66cab432a87889203db318b40c638b009"
@@ -145,6 +149,14 @@
 , { mapKey = "ghc-lib-parser-ex"
   , mapValue =
       "fb0c729c3709ce4e01d402db969c12206223aab327836362071f1de1b3c58cbc"
+  }
+, { mapKey = "ghc-parser"
+  , mapValue =
+      "a9303c265cf382175e42584cd656b90677a8421455552c4f62096d73518016bd"
+  }
+, { mapKey = "ghc-syntax-highlighter"
+  , mapValue =
+      "9a6ef6e882a086ac5d0491b98b9cbc75d9097238b6c1b296885ee3b73324fcbb"
   }
 , { mapKey = "ghc-trace-events"
   , mapValue =
@@ -306,6 +318,10 @@
   , mapValue =
       "8d8b31cb6a0d2adc20a0c772e128206c65c2bc83332d1c5f3906b33fb76977e4"
   }
+, { mapKey = "hspec-contrib"
+  , mapValue =
+      "f7eaadc15c5bba164ec34bcc33e4dfe8ce241e41ec0b8f0cf78665f65bd83cb4"
+  }
 , { mapKey = "hw-fingertree"
   , mapValue =
       "57925f322369f7bcd90879e710e77ce5766a5ad67bef0131715d2c64987f29fb"
@@ -334,6 +350,10 @@
   , mapValue =
       "7544493f3ec358007cb53ff599a91094d2cd3c475e21d6b3756906e16422698c"
   }
+, { mapKey = "ihaskell"
+  , mapValue =
+      "b3bc05973f9dd2d7ce26be0d58b2c970de0bc5070d5b5c71b5bd8d470f6260eb"
+  }
 , { mapKey = "implicit-hie"
   , mapValue =
       "07021e9872779a063889b51c69d168f6c1b98f09717d63e6f6629db6aa1f2f0f"
@@ -345,6 +365,10 @@
 , { mapKey = "indexed-profunctors"
   , mapValue =
       "ead9bc221e8fd9925c41617b7047522e139a0808c1b94f7f1fc7d93f37e65c00"
+  }
+, { mapKey = "ipython-kernel"
+  , mapValue =
+      "1b3c72a86599d63d4d6705cbdf397e19c444cb2174478661dc6cff0a83951bcd"
   }
 , { mapKey = "keys"
   , mapValue =
@@ -474,6 +498,10 @@
   , mapValue =
       "b25255b7cff68a832f55fa7f635c4da323d310597becc7139055373ca56d0123"
   }
+, { mapKey = "shelly"
+  , mapValue =
+      "188bceab600ebf6582eb6d34fe5ce407d141b4c1e21b72b5281ab8caf32d739e"
+  }
 , { mapKey = "sorted-list"
   , mapValue =
       "653400d4bce3b428e4d9548590226e0760b4ed7c419862b143fa52761f313f0d"
@@ -513,5 +541,9 @@
 , { mapKey = "xmlgen"
   , mapValue =
       "d178da6762fff86696ed342ebdec52d1a6d017d08014b0de3ccc621a33dccfdf"
+  }
+, { mapKey = "zeromq4-haskell"
+  , mapValue =
+      "b766028e899a4371909a36a98dfe9b5a0157bea87e4383156134280039817fa9"
   }
 ]
