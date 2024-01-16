@@ -4,11 +4,31 @@ with haskellLib;
 
 final: prev: {
 
+  Rlang-QQ = null;
+
+  cairo = final.callPackage ../pkgs/cairo.nix { cairo = pkgs.cairo; };
+
   foliage = null;
+
+  glib = final.callPackage ../pkgs/glib.nix { glib = pkgs.glib; };
 
   ghcide-bench = null;
 
   ghcide-test-utils = null;
+
+  ihaskell-charts = null;
+
+  ihaskell-gnuplot = null;
+
+  ihaskell-graphviz = null;
+
+  ihaskell-plot = null;
+
+  ihaskell-widgets = null;
+
+  pango = final.callPackage ../pkgs/pango.nix { pango = pkgs.pango; };
+
+  repa = null;
 
   sandwich = null;
 
@@ -42,4 +62,7 @@ final: prev: {
       chmod +x "$out/bin/haskell-language-server"
     '';
   };
+
+  xformat = null;
+
 }
