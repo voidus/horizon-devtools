@@ -4,8 +4,8 @@
 }:
 mkDerivation {
   pname = "hls-pragmas-plugin";
-  version = "2.4.0.0";
-  sha256 = "32753f991a9053fa626a70e38870d7250c14d2e1e64061320cf5080146299e11";
+  version = "2.6.0.0";
+  sha256 = "6325eb6cde9b8162a7da47a2c7c1175c4f2fea775757d6193d19b42a669a9f01";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

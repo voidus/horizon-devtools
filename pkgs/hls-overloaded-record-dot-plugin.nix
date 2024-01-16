@@ -5,8 +5,8 @@
 }:
 mkDerivation {
   pname = "hls-overloaded-record-dot-plugin";
-  version = "2.4.0.0";
-  sha256 = "0401108b10d5e605e7cd22fde78ca9a51e9606981e94d428df5683ee04d1d909";
+  version = "2.6.0.0";
+  sha256 = "d0997e64740b3f3b3b47d8806a0029ef4b34cde2ba14b34c51cfcadca2768b6e";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

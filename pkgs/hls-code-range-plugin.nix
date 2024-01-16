@@ -5,8 +5,8 @@
 }:
 mkDerivation {
   pname = "hls-code-range-plugin";
-  version = "2.4.0.0";
-  sha256 = "6acaa7421a4ce10a71833638573d8ae50ad3111398ea6e0127288e239e4b2e52";
+  version = "2.6.0.0";
+  sha256 = "453b292e903e4a5f4016e3f8ea142f51c503d9533cd97c6c2bd4ed3e14e224c7";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

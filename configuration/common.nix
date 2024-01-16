@@ -26,6 +26,18 @@ final: prev: {
 
   ihaskell-widgets = null;
 
+  hls-class-plugin = null;
+
+  hls-gadt-plugin = null;
+
+  hls-hlint-plugin = null;
+
+  hls-refactor-plugin = null;
+
+  hls-retrie-plugin = null;
+
+  hls-splice-plugin = null;
+
   pango = final.callPackage ../pkgs/pango.nix { pango = pkgs.pango; };
 
   repa = null;

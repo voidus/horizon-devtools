@@ -6,8 +6,8 @@
 }:
 mkDerivation {
   pname = "hls-test-utils";
-  version = "2.4.0.0";
-  sha256 = "9ccac05eb398d7d4ddd4ababc445323122b79f4f69103544f6eb0ea7a44e8b3a";
+  version = "2.6.0.0";
+  sha256 = "9947a0e35ecf6b0dd41654948471cb5a6afa9891b6993ea29574e6954d560258";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

@@ -4,8 +4,8 @@
 }:
 mkDerivation {
   pname = "hls-cabal-fmt-plugin";
-  version = "2.4.0.0";
-  sha256 = "79630cd9fdf28b8aa49acbdb4389489a4f99137b87f6ef4ce44be013cd9263bf";
+  version = "2.6.0.0";
+  sha256 = "6b7e4691f617e70f65191ecdf0f2d607b956faf3b67c1e2c82f8ed9d412f13fa";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

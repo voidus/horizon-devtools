@@ -9,8 +9,8 @@
 }:
 mkDerivation {
   pname = "hls-plugin-api";
-  version = "2.4.0.0";
-  sha256 = "1e7f703183db2795d21dab2291cbdc3f2c4d4dd566c8e2e70cb3159ba0ee16fb";
+  version = "2.6.0.0";
+  sha256 = "c44d7e78ebf40c716f0b927c1202c531a0631038629b962a44fc7f07a9372482";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
@@ -22,8 +22,8 @@ mkDerivation {
     time transformers unix unliftio unordered-containers
   ];
   testHaskellDepends = [
-    base containers lsp-types tasty tasty-hunit tasty-quickcheck
-    tasty-rerun text
+    base containers data-default lens lsp-types tasty tasty-hunit
+    tasty-quickcheck tasty-rerun text
   ];
   benchmarkHaskellDepends = [
     base criterion deepseq lsp-types random random-fu

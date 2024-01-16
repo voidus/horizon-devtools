@@ -3,8 +3,8 @@
 }:
 mkDerivation {
   pname = "singletons-th";
-  version = "3.2";
-  sha256 = "775e084f4304e9aba82642da37d3e9111dade2eff2603538a70661ce134c95e4";
+  version = "3.3";
+  sha256 = "1b0b456b9ff08638500ea90ad02e5fbeb3b0fca4a192deb1eabc0ed2dd333b8c";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

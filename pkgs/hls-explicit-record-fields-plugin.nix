@@ -4,8 +4,8 @@
 }:
 mkDerivation {
   pname = "hls-explicit-record-fields-plugin";
-  version = "2.4.0.0";
-  sha256 = "9c8b90c2ae9c886e811dd228302d83c67ea8aa537e60afd9f546a4eced3cac98";
+  version = "2.6.0.0";
+  sha256 = "84f413969dcfd65c991499ad6e5a0f3faf5ac79f99a061e55b42a28d32e843da";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

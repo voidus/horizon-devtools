@@ -4,8 +4,8 @@
 }:
 mkDerivation {
   pname = "hls-qualify-imported-names-plugin";
-  version = "2.4.0.0";
-  sha256 = "7d4b81682e1c82b37fd331bd12cdf0fe8b48a2e460febd924ea4aedd78b72afe";
+  version = "2.6.0.0";
+  sha256 = "a60af2d4609191519b96bb2e5be8cdcbb434174aa1124086981c08e054874f22";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

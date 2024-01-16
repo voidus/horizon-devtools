@@ -5,8 +5,8 @@
 }:
 mkDerivation {
   pname = "hls-explicit-imports-plugin";
-  version = "2.4.0.0";
-  sha256 = "ca026cb615a667095807a819cff9436da66dd79b59ac6e50bc213e7b3384bc9c";
+  version = "2.6.0.0";
+  sha256 = "6ccc81d0da529d117dfeaa54d6218aff6c6b868adf54ae23d40d17f940c164e8";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
