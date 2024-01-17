@@ -4,8 +4,8 @@
 }:
 mkDerivation {
   pname = "hls-explicit-fixity-plugin";
-  version = "2.4.0.0";
-  sha256 = "5ec08b247db79896d80c240f56f807e7ee443c5ef53ae4635e201154bd26a06d";
+  version = "2.6.0.0";
+  sha256 = "4ad92d86e212633ecfe0b520430d88e1793b551e51b706643475fbde9f05a902";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

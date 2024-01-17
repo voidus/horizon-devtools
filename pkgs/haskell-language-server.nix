@@ -1,30 +1,28 @@
 { mkDerivation, aeson, aeson-pretty, async, base, base16-bytestring
 , binary, bytestring, containers, cryptohash-sha1, data-default
 , deepseq, directory, extra, filepath, ghc, ghc-boot-th, ghc-paths
-, ghcide, ghcide-bench, ghcide-test-utils, githash, gitrev
-, hashable, hie-bios, hiedb, hls-alternate-number-format-plugin
-, hls-cabal-fmt-plugin, hls-cabal-plugin, hls-call-hierarchy-plugin
-, hls-change-type-signature-plugin, hls-class-plugin
-, hls-code-range-plugin, hls-explicit-fixity-plugin
-, hls-explicit-imports-plugin, hls-explicit-record-fields-plugin
-, hls-fourmolu-plugin, hls-gadt-plugin, hls-graph, hls-hlint-plugin
+, ghcide, ghcide-test-utils, githash, gitrev, hashable, hie-bios
+, hiedb, hls-alternate-number-format-plugin, hls-cabal-fmt-plugin
+, hls-cabal-plugin, hls-call-hierarchy-plugin
+, hls-change-type-signature-plugin, hls-code-range-plugin
+, hls-explicit-fixity-plugin, hls-explicit-imports-plugin
+, hls-explicit-record-fields-plugin, hls-fourmolu-plugin, hls-graph
 , hls-module-name-plugin, hls-overloaded-record-dot-plugin
 , hls-plugin-api, hls-pragmas-plugin
-, hls-qualify-imported-names-plugin, hls-refactor-plugin
-, hls-retrie-plugin, hls-splice-plugin, hls-test-utils, hp2pretty
-, hspec-expectations, implicit-hie, lens, lens-aeson, lib, lsp
-, lsp-test, lsp-types, mtl, optparse-applicative, optparse-simple
-, prettyprinter, process, regex-tdfa, row-types, safe-exceptions
-, shake, shake-bench, sqlite-simple, stm, temporary, text
-, transformers, unix, unliftio-core, unordered-containers, yaml
+, hls-qualify-imported-names-plugin, hls-semantic-tokens-plugin
+, hls-test-utils, lens, lens-aeson, lib, lsp, lsp-test, lsp-types
+, mtl, optparse-applicative, optparse-simple, prettyprinter
+, process, regex-tdfa, row-types, safe-exceptions, sqlite-simple
+, stm, temporary, text, transformers, unix, unliftio-core
+, unordered-containers
 }:
 mkDerivation {
   pname = "haskell-language-server";
-  version = "2.4.0.0";
-  sha256 = "0fc7d587b3cd288d770c684611367fab666f9790c56e49d920787b15b4deeb4b";
+  version = "2.6.0.0";
+  sha256 = "3655b8d741616f8e32d0181274f80a48d9b8dca47d3fd22675cadfa01ca80e48";
   configureFlags = [
-    "-f-eval" "-f-floskell" "-f-ormolu" "-f-refine-imports" "-f-rename"
-    "-f-stylishhaskell"
+    "-f-eval" "-f-floskell" "-f-hlint" "-f-ormolu" "-f-refine-imports"
+    "-f-rename" "-f-stan" "-f-stylishhaskell"
   ];
   isLibrary = true;
   isExecutable = true;
@@ -34,15 +32,14 @@ mkDerivation {
     cryptohash-sha1 data-default directory extra filepath ghc ghcide
     githash hie-bios hiedb hls-alternate-number-format-plugin
     hls-cabal-fmt-plugin hls-cabal-plugin hls-call-hierarchy-plugin
-    hls-change-type-signature-plugin hls-class-plugin
-    hls-code-range-plugin hls-explicit-fixity-plugin
-    hls-explicit-imports-plugin hls-explicit-record-fields-plugin
-    hls-fourmolu-plugin hls-gadt-plugin hls-graph hls-hlint-plugin
+    hls-change-type-signature-plugin hls-code-range-plugin
+    hls-explicit-fixity-plugin hls-explicit-imports-plugin
+    hls-explicit-record-fields-plugin hls-fourmolu-plugin hls-graph
     hls-module-name-plugin hls-overloaded-record-dot-plugin
     hls-plugin-api hls-pragmas-plugin hls-qualify-imported-names-plugin
-    hls-refactor-plugin hls-retrie-plugin hls-splice-plugin lsp
-    optparse-applicative optparse-simple prettyprinter process
-    safe-exceptions sqlite-simple text unordered-containers
+    hls-semantic-tokens-plugin lsp optparse-applicative optparse-simple
+    prettyprinter process safe-exceptions sqlite-simple text
+    unordered-containers
   ];
   executableHaskellDepends = [
     aeson async base base16-bytestring binary bytestring containers
@@ -56,17 +53,10 @@ mkDerivation {
   testHaskellDepends = [
     aeson base bytestring containers data-default deepseq directory
     extra filepath ghcide ghcide-test-utils hashable hls-plugin-api
-    hls-refactor-plugin hls-test-utils hspec-expectations lens
-    lens-aeson lsp-test lsp-types prettyprinter process row-types text
-    unordered-containers
+    hls-test-utils lens lens-aeson lsp-test lsp-types prettyprinter
+    process row-types text unordered-containers
   ];
   testToolDepends = [ ghcide ];
-  benchmarkHaskellDepends = [
-    aeson base containers data-default directory extra filepath
-    ghcide-bench hls-plugin-api lens lens-aeson optparse-applicative
-    shake shake-bench text yaml
-  ];
-  benchmarkToolDepends = [ ghcide-bench hp2pretty implicit-hie ];
   enableLibraryProfiling = true;
   enableExecutableProfiling = true;
   doHaddock = true;

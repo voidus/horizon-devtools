@@ -1,15 +1,20 @@
-{ mkDerivation, aeson, base, lib }:
+{ mkDerivation, aeson, attoparsec, base, bytestring
+, integer-conversion, lib, primitive, scientific, text, vector
+}:
 mkDerivation {
   pname = "attoparsec-aeson";
-  version = "2.1.0.0";
-  sha256 = "b34afb1c330428d9ff7e9e99655ece826ed7a1928dd5880c8127e73a12e906a9";
+  version = "2.2.0.1";
+  sha256 = "cfc5f23a7b45d00c1121cbd94aef7ff0b3d997039931862c460340599a01c409";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;
-  libraryHaskellDepends = [ aeson base ];
+  libraryHaskellDepends = [
+    aeson attoparsec base bytestring integer-conversion primitive
+    scientific text vector
+  ];
   enableLibraryProfiling = true;
   enableExecutableProfiling = true;
-  doHaddock = false;
+  doHaddock = true;
   jailbreak = true;
   doCheck = false;
   doBenchmark = false;

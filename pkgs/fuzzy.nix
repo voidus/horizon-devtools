@@ -1,8 +1,8 @@
 { mkDerivation, HUnit, base, lib, monoid-subclasses }:
 mkDerivation {
   pname = "fuzzy";
-  version = "0.1.0.1";
-  sha256 = "bca8afb42f2b75829a71a781c2014beb9387050b6aa37793e9940f97d422f49a";
+  version = "0.1.1.0";
+  sha256 = "3b0396f1549155431b3db656d2285f8bc4c6a5faa6b3d9f3ea7fbd5757fb8665";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

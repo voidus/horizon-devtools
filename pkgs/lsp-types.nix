@@ -8,8 +8,8 @@
 }:
 mkDerivation {
   pname = "lsp-types";
-  version = "2.0.2.0";
-  sha256 = "4686b80ad6b98d7ca773bf5a25a0797093c96b236da8089690ec3ab4462f0969";
+  version = "2.1.0.0";
+  sha256 = "3c3aa3c6f5418e8cebed767f271277abb24d263bd80d5e7381cb3077dc7e9e44";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;

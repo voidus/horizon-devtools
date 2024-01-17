@@ -7,10 +7,8 @@
 }:
 mkDerivation {
   pname = "hie-bios";
-  version = "0.12.0";
-  sha256 = "64eb00bb32dec259d0b92c63440bd29c72621683824693c082f643e398db2688";
-  revision = "1";
-  editedCabalFile = "18cmkzrq45schidxrn571b0x6x4vlmwkpzq0nwm97p4gsqvvwj48";
+  version = "0.13.1";
+  sha256 = "3439aad92267cd92683c29bc91b01675d998388056c91fad351da1e90389f9e3";
   isLibrary = true;
   isExecutable = true;
   enableSeparateDataOutput = false;
@@ -36,7 +34,7 @@ mkDerivation {
   doCheck = false;
   doBenchmark = false;
   hyperlinkSource = false;
-  homepage = "https://github.com/mpickering/hie-bios";
+  homepage = "https://github.com/haskell/hie-bios";
   description = "Set up a GHC API session";
   license = lib.licenses.bsd3;
   broken = false;

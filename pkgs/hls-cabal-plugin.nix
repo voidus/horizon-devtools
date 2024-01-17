@@ -6,8 +6,8 @@
 }:
 mkDerivation {
   pname = "hls-cabal-plugin";
-  version = "2.4.0.0";
-  sha256 = "2337bf878ccf6e5e40b285e60dfa364b6f91b8785451b3f74320eaa75b71b59e";
+  version = "2.6.0.0";
+  sha256 = "b612916c4f49dd4ea0b24e0ae87797cffa7e70524c69a46a2188023c779a9903";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

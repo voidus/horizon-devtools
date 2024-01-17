@@ -4,8 +4,8 @@
 }:
 mkDerivation {
   pname = "hls-call-hierarchy-plugin";
-  version = "2.4.0.0";
-  sha256 = "80dee57ad447ee4419990c6af008f080d0b3506d1b79c2692fd62714459ff20f";
+  version = "2.6.0.0";
+  sha256 = "8131d9a25ebfed1f44f7c8ed21014317f207916f26cf9528a29de61ef34c8b89";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = false;

@@ -221,6 +221,8 @@ final: prev: with pkgs.haskell.lib; {
 
   hls-retrie-plugin = final.callPackage (./pkgs/hls-retrie-plugin.nix) { };
 
+  hls-semantic-tokens-plugin = final.callPackage (./pkgs/hls-semantic-tokens-plugin.nix) { };
+
   hls-splice-plugin = final.callPackage (./pkgs/hls-splice-plugin.nix) { };
 
   hls-test-utils = final.callPackage (./pkgs/hls-test-utils.nix) { };
@@ -272,8 +274,6 @@ final: prev: with pkgs.haskell.lib; {
   ihaskell-widgets = final.callPackage (./pkgs/ihaskell-widgets.nix) { };
 
   implicit-hie = final.callPackage (./pkgs/implicit-hie.nix) { };
-
-  implicit-hie-cradle = final.callPackage (./pkgs/implicit-hie-cradle.nix) { };
 
   indexed-profunctors = final.callPackage (./pkgs/indexed-profunctors.nix) { };
 

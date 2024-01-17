@@ -3,8 +3,8 @@
 }:
 mkDerivation {
   pname = "ghc-syntax-highlighter";
-  version = "0.0.10.0";
-  sha256 = "e2785c6250ff5e2876f9afe638fea362a79c910029625f5599c234acb297bd90";
+  version = "0.0.11.0";
+  sha256 = "ba6797f433473cd4370fae82dd63ca672a3834a3a5ed7c87cfad55d50c875b78";
   isLibrary = true;
   isExecutable = false;
   enableSeparateDataOutput = true;
