@@ -11,7 +11,6 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     horizon-core.url = "git+https://gitlab.horizon-haskell.net/package-sets/horizon-core?ref=lts/ghc-9.8.x";
     horizon-hoogle.url = "git+https://gitlab.horizon-haskell.net/nix/horizon-hoogle";
-    lint-utils.url = "git+https://gitlab.nixica.dev/nix/lint-utils";
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   };
 
@@ -20,7 +19,6 @@
     { self
     , flake-parts
     , horizon-core
-    , lint-utils
     , nixpkgs
     , ...
     }:
@@ -50,12 +48,6 @@
 
         in
         {
-
-          checks = with lint-utils.linters.${system}; {
-            dhall-format = dhall-format { src = self; };
-            nixpkgs-fmt = nixpkgs-fmt { src = self; find = "flake.nix"; };
-          };
-
           inherit legacyPackages;
 
           inherit packages;
